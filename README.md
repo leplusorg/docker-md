@@ -1,6 +1,6 @@
 # Markdown
 
-Multi-platform Docker container with utilities to process Markdown files (`asciidoc`, `a2x`, `ascidoctor`...). 
+Multi-platform Docker container with utilities to process Mardown and text files (pandoc, markdown, prettier...).
 
 [![Dockerfile](https://img.shields.io/badge/GitHub-Dockerfile-blue)](md/Dockerfile)
 [![Docker Build](https://github.com/leplusorg/docker-md/workflows/Docker/badge.svg)](https://github.com/leplusorg/docker-md/actions?query=workflow:"Docker")
@@ -17,13 +17,13 @@ Let's say that you want to convert an Markdown file intput.md in your current wo
 **Mac/Linux**
 
 ```bash
-cat intput.md | docker run --rm -i --net=none leplusorg/md asciidoc -o - > output.html
+cat intput.md | docker run --rm -i --net=none leplusorg/md pandoc -o - > output.html
 ```
 
 **Windows**
 
 ```batch
-type intput.md | docker run --rm -i --net=none leplusorg/md asciidoc -o - > output.html
+type intput.md | docker run --rm -i --net=none leplusorg/md pandoc -o - > output.html
 ```
 
 ## Example using the filesystem
@@ -33,7 +33,7 @@ Same thing, assuming that you want to convert an Markdown file intput.md in your
 **Mac/Linux**
 
 ```bash
-docker run --rm -t --user="$(id -u):$(id -g)" --net=none -v "$(pwd):/tmp" leplusorg/md asciidoc -o output.html intput.md
+docker run --rm -t --user="$(id -u):$(id -g)" --net=none -v "$(pwd):/tmp" leplusorg/md pandoc -o output.html intput.md
 ```
 
 **Windows**
@@ -41,13 +41,13 @@ docker run --rm -t --user="$(id -u):$(id -g)" --net=none -v "$(pwd):/tmp" leplus
 In `cmd`:
 
 ```batch
-docker run --rm -t --net=none -v "%cd%:/tmp" leplusorg/md asciidoc -o output.html intput.md
+docker run --rm -t --net=none -v "%cd%:/tmp" leplusorg/md pandoc -o output.html intput.md
 ```
 
 In PowerShell:
 
 ```pwsh
-docker run --rm -t --net=none -v "${PWD}:/tmp" leplusorg/md asciidoc -o output.html intput.md
+docker run --rm -t --net=none -v "${PWD}:/tmp" leplusorg/md pandoc -o output.html intput.md
 ```
 
 ## Software Bill of Materials (SBOM)
