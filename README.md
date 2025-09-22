@@ -1,6 +1,6 @@
 # Markdown
 
-Multi-platform Docker container with utilities to process Mardown and text files (pandoc, markdown, prettier...).
+Multi-platform Docker container with utilities to process Mardown and text files (`pandoc`, `markdown`, `prettier`...).
 
 [![Dockerfile](https://img.shields.io/badge/GitHub-Dockerfile-blue)](md/Dockerfile)
 [![Docker Build](https://github.com/leplusorg/docker-md/workflows/Docker/badge.svg)](https://github.com/leplusorg/docker-md/actions?query=workflow:"Docker")
