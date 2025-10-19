@@ -34,7 +34,7 @@ RUN apk upgrade --no-cache \
 
 RUN pipx ensurepath --global \
     && pipx install --global \
-    mdformat==0.7.22
+    mdformat==1.0.0
 
 RUN npm install -g \
     prettier@3.6.2
