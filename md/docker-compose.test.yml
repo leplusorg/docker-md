@@ -19,6 +19,7 @@ services:
         markdown --version # markdown
         mdformat --version # mdformat
         pandoc --version # pandoc
+        npx prettier --version # prettier
         pip --version # py3-pip
         python --version # python3
       '

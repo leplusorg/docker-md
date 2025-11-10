@@ -23,6 +23,7 @@ RUN apk upgrade --no-cache \
     curl=8.14.1-r2 \
     git=2.49.1-r0 \
     go-md2man=2.0.7-r4 \
+    jq=1.8.0-r0 \
     markdown=1.0.1-r3 \
     npm=11.3.0-r1 \
     pandoc-cli=3.6.4-r0 \
@@ -38,8 +39,11 @@ RUN pipx ensurepath --global \
     && xargs -a /tmp/requirements.txt -n 1 pipx install --global \
     && rm -f /tmp/requirements.txt
 
-RUN npm install -g \
-    prettier@3.6.2
+COPY package.json /tmp/package.json
+
+RUN jq -r '.dependencies | to_entries[] | "\(.key)@\(.value)"' /tmp/package.json \
+    | xargs -n 1 npm install -g \
+    && rm -f /tmp/package.json
 
 RUN adduser \
   --home "${USER_HOME}" \
