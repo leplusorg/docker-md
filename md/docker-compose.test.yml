@@ -16,6 +16,7 @@ services:
         curl --version # curl
         git --version # git
         echo | go-md2man # go-md2man
+        jq --version # jq
         markdown --version # markdown
         mdformat --version # mdformat
         pandoc --version # pandoc
