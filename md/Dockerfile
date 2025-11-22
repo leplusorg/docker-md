@@ -25,7 +25,7 @@ RUN apk upgrade --no-cache \
     go-md2man=2.0.7-r4 \
     jq=1.8.1-r0 \
     markdown=1.0.1-r3 \
-    npm=11.4.2-r0 \
+    npm=11.6.3-r0 \
     pandoc-cli=3.6.4-r0 \
     pipx=1.7.1-r0 \
     py3-pip=25.1.1-r0 \
