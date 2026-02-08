@@ -22,7 +22,7 @@ RUN apk upgrade --no-cache \
     coreutils=9.8-r1 \
     curl=8.17.0-r1 \
     git=2.52.0-r0 \
-    go-md2man=2.0.7-r7 \
+    go-md2man=2.0.7-r8 \
     jq=1.8.1-r0 \
     markdown=1.0.1-r3 \
     npm=11.6.3-r0 \
