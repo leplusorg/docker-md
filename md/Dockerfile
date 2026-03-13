@@ -22,10 +22,10 @@ RUN apk upgrade --no-cache \
     coreutils=9.8-r1 \
     curl=8.17.0-r1 \
     git=2.52.0-r0 \
-    go-md2man=2.0.7-r8 \
+    go-md2man=2.0.7-r9 \
     jq=1.8.1-r0 \
     markdown=1.0.1-r3 \
-    npm=11.6.3-r0 \
+    npm=11.11.0-r0 \
     pandoc-cli=3.8.2.1-r0 \
     pipx=1.8.0-r0 \
     py3-pip=25.1.1-r1 \
