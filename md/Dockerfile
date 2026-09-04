@@ -20,7 +20,7 @@ RUN apk upgrade --no-cache \
     aspell-ru=0.99_p7-r2 \
     aspell-uk=1.4.0-r3 \
     coreutils=9.11-r0 \
-    curl=8.21.0-r0 \
+    curl=8.22.0-r0 \
     git=2.54.0-r0 \
     go-md2man=2.0.7-r11 \
     jq=1.8.2-r0 \
