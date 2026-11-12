@@ -21,7 +21,7 @@ RUN apk upgrade --no-cache \
     aspell-uk=1.4.0-r3 \
     coreutils=9.11-r0 \
     curl=8.23.0-r0 \
-    git=2.54.0-r0 \
+    git=2.54.1-r0 \
     go-md2man=2.0.7-r13 \
     jq=1.8.2-r0 \
     markdown=1.0.1-r3 \
